@@ -2,6 +2,10 @@ Meteor.subscribe('locations');
 
 Session.set('locations', []);
 
+Template.home.rendered = function(){
+  $('body').addClass('background-home');
+}
+
 Template.home.helpers({
   searchResults: function () {
     return Session.get('locations');

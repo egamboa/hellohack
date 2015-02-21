@@ -1,7 +1,10 @@
 @media screen and (max-width: 640px){
 	body{
-		background: url(/img/mobilebg.jpg) no-repeat center center;
+		background: #eee;
+		&.background-home{
+			background: url(/img/mobilebg.jpg) no-repeat center center;
 		background-size: cover;
+		}
 		.container{
 			padding: 0;
 			.navbar{

@@ -1,6 +1,9 @@
 @media screen and (min-width: 641px){
 	body{
-		background: url(/img/largebg.jpg) no-repeat center center;
+		background: #eee;
+		&.background-home{
+			background: url(/img/largebg.jpg) no-repeat center center;
+		}
 	}
 	.navbar{
 		border-radius: 0;
