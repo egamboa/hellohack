@@ -1,0 +1,47 @@
+#search{
+	color: #fff;
+  font-family: 'verblight', sans-serif;
+  .container{
+    h1, p{
+      text-align: center;
+    }
+    .row{
+      position: relative;
+      form{
+        position: relative;
+        margin-top: 2rem;
+        input[type="text"]{
+          width: 100%;
+          height: 45px;
+          border-radius: 5px;
+          line-height: 47px;
+          font-family: 'helveticaregular', sans-serif;
+          color: $gray;
+          padding-left: 4rem; 
+          border: none;
+        }
+        span.searchByGPS{
+          position: absolute;
+          top: 9px;
+          left: 0;
+          border-right: 1px solid $lightgray;
+          display: block;
+          padding: 0.5rem 1rem;
+          i{
+            color: $lightgray;
+          }
+        }
+        button{
+          position: absolute;
+          top: 0.5rem;
+          right: 0.5rem;
+          background: $orange;
+          border: none;
+          border-radius: 3px;
+          padding: 5px 14px;
+          font-size: 1.8rem;
+        }
+      }
+    }
+  }
+}
