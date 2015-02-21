@@ -1,20 +1,9 @@
-Meteor.publish('posts', function(options) {
-  check(options, {
-    sort: Object,
-    limit: Number
-  });
-  return Posts.find({}, options);
+Meteor.publish('hoods', function() {
+  return Hoods.find({});
 });
 
-Meteor.publish('singlePost', function(id) {
-  check(id, String);
-  return Posts.find(id);
-});
-
-
-Meteor.publish('comments', function(postId) {
-  check(postId, String);
-  return Comments.find({postId: postId});
+Meteor.publish('reviews', function(hoodId) {
+  return Reviews.find({hoodId: hoodId});
 });
 
 Meteor.publish('notifications', function() {
