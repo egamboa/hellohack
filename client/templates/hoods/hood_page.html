@@ -1,0 +1,14 @@
+<template name="hoodPage">
+  {{> hoodItem}}
+  {{#if currentUser}}
+    {{> reviewSubmit}}
+  {{else}}
+    <p>Please log in to leave a review.</p>
+  {{/if}}
+  <ul class="reviews">
+    {{#each reviews}}
+      {{> reviewsItem}}
+    {{/each}}
+  </ul>
+
+</template>
