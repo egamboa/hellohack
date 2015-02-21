@@ -1,10 +1,8 @@
 <template name="hoodSearchItem">
-  <div class="hood" {{attributes}}>
+  <div class="hood">
     <div class="hood-content">
-      <h3><a href="{{url}}">{{title}}</a></h3>
-      <p>
-        Aqui va todo lo del details
-      </p>
+      <h3><a href="/hood/{{_id}}">{{title}}</a></h3>
+      <img src="{{img}}">
     </div>
   </div>
 </template>
