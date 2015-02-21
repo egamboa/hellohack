@@ -14,17 +14,11 @@
             <input class="search" type="text" placeholder="Search for neighborhoods">
             <button type="button"><i class="fa fa-search"></i></button>
             <ul class="autocomplete">
-              <li><a href="#">Tres R&iacute;os, Cartago</a></li>
-              <li><a href="#">Curridabat, San Jos&eacute;</a></li>
-              <li><a href="#">Escaz&uacute;, San Jos&eacute;</a></li>
-              <li><a href="#">Montes de Oca, San Jos&eacute;</a></li>
+              {{#each locations}}
+                <li><a href="/results/{{hoodCase}}">{{name}}</a></li>
+              {{/each}}
             </ul>
           </form>
-          <ul>
-            {{#each locations}}
-              <li><a href="/results/{{hoodCase}}">{{name}}</a></li>
-            {{/each}}
-          </ul>
         </div>
       </div>
       <div class="row">
