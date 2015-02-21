@@ -1,19 +1,30 @@
-Meteor.subscribe('hoods');
+Meteor.subscribe('locations');
 
-Session.set('searchResults', []);
+Session.set('locations', []);
 
 Template.home.helpers({
   searchResults: function () {
-    return Session.get('searchResults');
+    return Session.get('locations');
   },
 
-  results: function () {
-    return Session.get('searchResults');
+  locations: function () {
+    return Session.get('locations');
   }
 });
 
 Template.home.events({
   "keyup .search": function(e) {
-    Session.set('searchResults', Hoods.find({}).fetch());
+    
+    if (e.target.value) {
+      var re = new RegExp('.*' + e.target.value + '.*');
+      
+      Session.set('locations', Locations.find({
+        name: {
+          $regex : re
+        }
+      }).fetch());
+    } else {
+      Session.set('locations', []);
+    }
   }
 });

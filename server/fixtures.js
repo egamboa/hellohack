@@ -120,5 +120,4 @@ if (Hoods.find().count() === 0) {
     mapImg: '',
     graphImg: ''
   });
-
 }
