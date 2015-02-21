@@ -1,3 +1,7 @@
+Meteor.publish('locations', function() {
+  return Locations.find({});
+});
+
 Meteor.publish('hoods', function() {
   return Hoods.find({});
 });

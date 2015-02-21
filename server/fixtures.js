@@ -14,3 +14,15 @@ if (Hoods.find().count() === 0) {
     reviewCount: 0
   });
 }
+
+if (Locations.find().count() === 0) {
+  Locations.insert({
+    hoodCase: '1',
+    name: 'Curridabat, San José'
+  });
+
+  Locations.insert({
+    hoodCase: '2',
+    name: 'Escazú, San José'
+  });
+}
