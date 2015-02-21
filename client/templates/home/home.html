@@ -13,6 +13,11 @@
             <input class="search" type="text">
             <button type="button">Search</button>
           </form>
+          <ul>
+            {{#each results}}
+              <li>{{title}}</li>
+            {{/each}}
+          </ul>
         </div>
       </div>
       <div class="row">
