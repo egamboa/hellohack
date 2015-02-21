@@ -1,12 +1,22 @@
 if (Locations.find().count() === 0) {
   Locations.insert({
     hoodCase: '1',
-    name: 'Curridabat, San José'
+    name: 'Curridabat, San Jose'
   });
 
   Locations.insert({
     hoodCase: '2',
-    name: 'Escazú, San José'
+    name: 'Escazú, San Jose'
+  });
+
+  Locations.insert({
+    hoodCase: '3',
+    name: 'Tres Rios, Cartago'
+  });
+
+  Locations.insert({
+    hoodCase: '4',
+    name: 'San Pedro, San Jose'
   });
 }
 // Fixture data 

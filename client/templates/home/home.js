@@ -16,7 +16,7 @@ Template.home.events({
   "keyup .search": function(e) {
     
     if (e.target.value) {
-      var re = new RegExp('.*' + e.target.value + '.*');
+      var re = new RegExp('.*' + e.target.value + '.*', 'i');
       
       Session.set('locations', Locations.find({
         name: {
