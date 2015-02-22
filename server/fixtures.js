@@ -33,7 +33,7 @@ if (Hoods.find().count() === 0) {
     img: 'http://www.fotopaises.com/Fotos-Paises/t500/2007/2/18/3310_1171876869.jpg',
     mapLargeImg: '/img/maps/mapLargeAlerts.jpg',
     mapSmallImg: '/img/maps/mapSmallAlerts.jpg',
-    smile: '/img/icons/neutral.jpg',
+    smile: '/img/icons/happy.png',
     graphImg: ''
   });
 
@@ -47,7 +47,7 @@ if (Hoods.find().count() === 0) {
     img: 'http://agenteencostarica.com/wp-content/uploads/2014/09/IMG_7305.jpg',
     mapLargeImg: '/img/maps/mapLargeAlerts.jpg',
     mapSmallImg: '/img/maps/mapSmallAlerts.jpg',
-    smile: '/img/icons/neutral.jpg',
+    smile: '/img/icons/happy.png',
     graphImg: ''
   });
 
@@ -61,7 +61,7 @@ if (Hoods.find().count() === 0) {
     img: 'http://static.panoramio.com/photos/large/38314980.jpg',
     mapLargeImg: '/img/maps/mapLargeAlerts.jpg',
     mapSmallImg: '/img/maps/mapSmallAlerts.jpg',
-    smile: '/img/icons/neutral.jpg',
+    smile: '/img/icons/sad.png',
     graphImg: ''
   });
 
@@ -75,7 +75,7 @@ if (Hoods.find().count() === 0) {
     img: 'http://upload.wikimedia.org/wikipedia/commons/c/cf/Parque_JFK.jpg',
     mapLargeImg: '/img/maps/mapLargeAlerts.jpg',
     mapSmallImg: '/img/maps/mapSmallAlerts.jpg',
-    smile: '/img/icons/neutral.jpg',
+    smile: '/img/icons/neutral.png',
     graphImg: ''
   });
 
@@ -89,7 +89,7 @@ if (Hoods.find().count() === 0) {
     img: 'http://images.quebarato.co.cr/T440x/casa+calle+blancos+1+tibas+san+jose+costa+rica__7209CA_1.jpg',
     mapLargeImg: '/img/maps/mapLargeAlerts.jpg',
     mapSmallImg: '/img/maps/mapSmallAlerts.jpg',
-    smile: '/img/icons/neutral.jpg',
+    smile: '/img/icons/happy.png',
     graphImg: ''
   });
 
@@ -103,7 +103,7 @@ if (Hoods.find().count() === 0) {
     img: 'http://static.panoramio.com/photos/large/18800024.jpg',
     mapLargeImg: '/img/maps/mapLargeAlerts.jpg',
     mapSmallImg: '/img/maps/mapSmallAlerts.jpg',
-    smile: '/img/icons/neutral.jpg',
+    smile: '/img/icons/neutral.png',
     graphImg: ''
   });
 
@@ -117,7 +117,7 @@ if (Hoods.find().count() === 0) {
     img: 'http://upload.wikimedia.org/wikipedia/commons/c/cf/Parque_JFK.jpg',
     mapLargeImg: '/img/maps/mapLargeAlerts.jpg',
     mapSmallImg: '/img/maps/mapSmallAlerts.jpg',
-    smile: '/img/icons/neutral.jpg',
+    smile: '/img/icons/sad.png',
     graphImg: ''
   });
 
@@ -131,7 +131,7 @@ if (Hoods.find().count() === 0) {
     img: 'http://upload.wikimedia.org/wikipedia/commons/c/cf/Parque_JFK.jpg',
     mapLargeImg: '/img/maps/mapLargeAlerts.jpg',
     mapSmallImg: '/img/maps/mapSmallAlerts.jpg',
-    smile: '/img/icons/neutral.jpg',
+    smile: '/img/icons/happy.png',
     graphImg: ''
   });
 
@@ -145,7 +145,7 @@ if (Hoods.find().count() === 0) {
     img: 'http://www.fotopaises.com/Fotos-Paises/t500/2009/4/13/5874_1239593183.jpg',
     mapLargeImg: '/img/maps/mapLargeAlerts.jpg',
     mapSmallImg: '/img/maps/mapSmallAlerts.jpg',
-    smile: '/img/icons/neutral.jpg',
+    smile: '/img/icons/sad.png',
     graphImg: ''
   });
 }

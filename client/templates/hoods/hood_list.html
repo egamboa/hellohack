@@ -1,7 +1,128 @@
 <template name="hoodList">
-  <div class="hoods">
-    {{#each hoods}}
-      {{> hoodSearchItem}}
-    {{/each}}
-  </div>
+  <section id="search-results">
+    <div class="container">
+      <div class="row">
+        <div class="hide-xs col-xs-12 col-sm-12 col-md-3 col-lg-3">
+          <div id="results-sidebar">
+            <h4><i class="fa fa-filter"></i> Filter Results</h4>
+            <div class="widget">
+              <h2>Safety</h2>
+              <ul class="list-unstyled">
+                <li>
+                  <input id="option1" type="radio" name="field1" value="option">
+                  <label for="option1"></label>
+                  <span>Sketchy</span>
+                </li>
+                <li>
+                  <input id="option2" type="radio" name="field1" value="option">
+                  <label for="option2"></label>
+                  <span>Safe</span>
+                </li>
+                <li>
+                  <input id="option3" type="radio" name="field1" value="option">
+                  <label for="option3"></label>
+                  <span>Very Safe</span>
+                </li>
+              </ul>
+            </div>
+            <div class="widget">
+              <h2>Budget</h2>
+              <ul class="list-unstyled">
+                <li>
+                  <input id="option4" type="radio" name="field2" value="option">
+                  <label for="option4"></label>
+                  <span>$1,000 or Less</span>
+                </li>
+                <li>
+                  <input id="option5" type="radio" name="field2" value="option">
+                  <label for="option5"></label>
+                  <span>$1,000 - $2,000</span>
+                </li>
+                <li>
+                  <input id="option6" type="radio" name="field2" value="option">
+                  <label for="option6"></label>
+                  <span>$2,000 or More</span>
+                </li>
+              </ul>
+            </div>
+            <div class="widget">
+              <h2>Are you interested in?</h2>
+              <ul class="list-unstyled">
+                <li>
+                  <input id="option7" type="radio" name="field3" value="option">
+                  <label for="option7"></label>
+                  <span>Renting</span>
+                </li>
+                <li>
+                  <input id="option8" type="radio" name="field3" value="option">
+                  <label for="option8"></label>
+                  <span>Buying</span>
+                </li>
+              </ul>
+            </div>
+            <div class="widget">
+              <h2>Children</h2>
+              <ul class="list-unstyled">
+                <li>
+                  <input id="option9" type="radio" name="field4" value="option">
+                  <label for="option9"></label>
+                  <span>Yes</span>
+                </li>
+                <li>
+                  <input id="option10" type="radio" name="field4" value="option">
+                  <label for="option10"></label>
+                  <span>No</span>
+                </li>
+              </ul>
+            </div>
+            <div class="widget">
+              <h2>Pets</h2>
+              <ul class="list-unstyled">
+                <li>
+                  <input id="option11" type="radio" name="field5" value="option">
+                  <label for="option11"></label>
+                  <span>Yes</span>
+                </li>
+                <li>
+                  <input id="option12" type="radio" name="field5" value="option">
+                  <label for="option12"></label>
+                  <span>No</span>
+                </li>
+              </ul>
+            </div>
+            <div class="widget">
+              <h2>Status</h2>
+              <ul class="list-unstyled">
+                <li>
+                  <input id="option13" type="radio" name="field5" value="option">
+                  <label for="option13"></label>
+                  <span>Single</span>
+                </li>
+                <li>
+                  <input id="option14" type="radio" name="field5" value="option">
+                  <label for="option14"></label>
+                  <span>Married</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
+          <div class="results clearfix">
+            <div class="little-search show-xs">
+              <img src="/img/little-search.png">
+            </div>
+            <h2 class="clearfix">We found {{size}} neighborhoods for you <img class="pull-right hide-xs" src="/img/select.png"></h2>
+            <div class="row">
+              {{#each hoods}}
+              <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                {{> hoodSearchItem}}
+              </div>
+              {{/each}}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 </template>
