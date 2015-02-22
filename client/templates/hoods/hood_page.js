@@ -1,6 +1,6 @@
 Meteor.subscribe('reviews');
 Template.hoodPage.rendered = function(){
-  $('body').removeClass('background-home');
+  $('body').removeClass('background-home').removeClass('background-results');;
 }
 Template.hoodPage.helpers({
 	reviews: function(){
