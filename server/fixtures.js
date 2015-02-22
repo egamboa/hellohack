@@ -33,7 +33,7 @@ if (Hoods.find().count() === 0) {
     img: 'http://www.fotopaises.com/Fotos-Paises/t500/2007/2/18/3310_1171876869.jpg',
     mapLargeImg: '/img/maps/mapLargeAlerts.jpg',
     mapSmallImg: '/img/maps/mapSmallAlerts.jpg',
-    smile: '/img/icons/neutral.jpg',
+    smile: '/img/icons/happy.png',
     graphImg: ''
   });
 
@@ -47,7 +47,7 @@ if (Hoods.find().count() === 0) {
     img: 'http://agenteencostarica.com/wp-content/uploads/2014/09/IMG_7305.jpg',
     mapLargeImg: '/img/maps/mapLargeAlerts.jpg',
     mapSmallImg: '/img/maps/mapSmallAlerts.jpg',
-    smile: '/img/icons/neutral.jpg',
+    smile: '/img/icons/neutral.png',
     graphImg: ''
   });
 
