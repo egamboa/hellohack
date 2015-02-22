@@ -2,9 +2,10 @@
   .navbar-header{
   	@media screen and (max-width: 640px){
   		.navbar-toggle{
-  			background-color: $gray;
+  			border: none;
   			.icon-bar{
-  				background-color: #fff;
+  				background-color: $orange;
+          height: 3px;
   			}
   		}
   	}

@@ -1,10 +1,14 @@
 <template name="hoodItem">
   <div class="hood" {{attributes}}>
     <div class="hood-content">
-      <h3><a href="{{url}}">{{title}}</a></h3>
-      <p>
-        Aqui va todo lo del details
-      </p>
+      <div class="result-head">
+        <img class="map" src="/img/single/mapSmall.jpg" />
+        <div class="hood-mainInfo">
+          <div class="actions"></div>
+          <h3>{{title}}</h3>
+        </div>
+      </div>
+      
     </div>
   </div>
 </template>
