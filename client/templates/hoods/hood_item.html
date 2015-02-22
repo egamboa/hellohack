@@ -2,8 +2,49 @@
   <div class="hood" {{attributes}}>
     <div class="hood-content">
       <div class="result-head">
-        <img class="mapSmall" src="{{mapSmallImg}}" />
-        <img class="mapLarge" src="{{mapLargeImg}}" />
+        <div class="image-holder">
+          <img class="mapSmall" src="{{mapSmallImg}}" />
+          <img class="mapLarge" src="{{mapLargeImg}}" />
+          <a class="addAlert" href="#">add</a>
+          <a class="dummyShow" href="#">show</a>
+          {{#if showAdd}}
+            <div class="add-alert-holder">
+              <div class="alert-head">
+                REPORT EVENT
+              </div>
+              <div class="form">
+                <p>Event Type</p>
+                <select name="alert-type" id="alertType">
+                  <option value="assault">Robbery</option>
+                  <option value="bad">Drugs</option>
+                  <option value="accidents">Accidents</option>
+                  <option value="sound">Sound Polution</option>
+                  <option value="people">Suspicious People</option>
+                </select>
+                <p class="question">What happend?</p>
+                <textarea class="answer"></textarea>
+                <a class="sentAlert" href="#">ADD ALERT</a>
+              </div>
+            </div>
+          {{/if}}
+          {{#if showDummy}}
+            <div class="dummyAlert">
+              <div class="dummyhead">
+                <img src="/img/icons/ambulance.png">
+                <div class="toRight">
+                   <p>ASALTO</p>
+                   <p>APRIL 26 @ 3:30PM</p>
+                </div>
+              </div>
+              <div class="dummycontent">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nec mauris vel erat vestibulum volutpat eu id risus.
+              </div>
+              <div class="owner">
+                by Karina R.
+              </div>
+            </div>
+          {{/if}}
+        </div>
         <div class="hood-mainInfo">
           <div class="actions"></div>
           <h3>{{title}}</h3>
