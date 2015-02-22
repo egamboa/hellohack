@@ -29,19 +29,19 @@ if (Hoods.find().count() === 0) {
     provice: 'San José',
     canton: 'Curridabat',
     reviewCount: 0,
-    case: 'caso1',
+    hoodCase: 'caso1',
     img: 'http://www.fotopaises.com/Fotos-Paises/t500/2007/2/18/3310_1171876869.jpg',
     mapImg: '',
     graphImg: ''
   });
 
-  var case1 = Hoods.insert({
+  Hoods.insert({
     title: 'Escazú, San José (Condominio Cerro Alto)',
     description: 'Distrito Cuatro (Starbucks, Maradentro, Matsuri, El Argentino, Auto Mercado, Práctico) Pescatore, La Fabbrica, Crossfit Escazú, Crossfit 506',
     provice: 'San José',
     canton: 'Escazú',
     reviewCount: 0,
-    case: 'caso2',
+    hoodCase: 'caso2',
     img: 'http://agenteencostarica.com/wp-content/uploads/2014/09/IMG_7305.jpg',
     mapImg: '',
     graphImg: ''
@@ -53,7 +53,7 @@ if (Hoods.find().count() === 0) {
     provice: 'Cartago',
     canton: 'Tres Ríos',
     reviewCount: 0,
-    case: 'caso3',
+    hoodCase: 'caso3',
     img: 'http://static.panoramio.com/photos/large/38314980.jpg',
     mapImg: '',
     graphImg: ''
@@ -65,7 +65,7 @@ if (Hoods.find().count() === 0) {
     provice: 'San José',
     canton: 'Montes de Oca',
     reviewCount: 0,
-    case: 'caso4',
+    hoodCase: 'caso4',
     img: 'http://upload.wikimedia.org/wikipedia/commons/c/cf/Parque_JFK.jpg',
     mapImg: '',
     graphImg: ''
@@ -77,7 +77,7 @@ if (Hoods.find().count() === 0) {
     provice: 'San José',
     canton: 'Goicoechea',
     reviewCount: 0,
-    case: 'none',
+    hoodCase: 'none',
     img: 'http://images.quebarato.co.cr/T440x/casa+calle+blancos+1+tibas+san+jose+costa+rica__7209CA_1.jpg',
     mapImg: '',
     graphImg: ''
@@ -89,7 +89,7 @@ if (Hoods.find().count() === 0) {
     provice: 'San José',
     canton: 'Desamparados',
     reviewCount: 0,
-    case: 'none',
+    hoodCase: 'none',
     img: 'http://static.panoramio.com/photos/large/18800024.jpg',
     mapImg: '',
     graphImg: ''
@@ -101,7 +101,7 @@ if (Hoods.find().count() === 0) {
     provice: 'San José',
     canton: 'Sabanilla',
     reviewCount: 0,
-    case: 'none',
+    hoodCase: 'none',
     img: 'http://upload.wikimedia.org/wikipedia/commons/c/cf/Parque_JFK.jpg',
     mapImg: '',
     graphImg: ''
@@ -113,7 +113,7 @@ if (Hoods.find().count() === 0) {
     provice: 'San José',
     canton: 'San José',
     reviewCount: 0,
-    case: 'none',
+    hoodCase: 'none',
     img: 'http://upload.wikimedia.org/wikipedia/commons/c/cf/Parque_JFK.jpg',
     mapImg: '',
     graphImg: ''
@@ -125,9 +125,64 @@ if (Hoods.find().count() === 0) {
     provice: 'San José',
     canton: 'Guadalupe',
     reviewCount: 0,
-    case: 'none',
+    hoodCase: 'none',
     img: 'http://www.fotopaises.com/Fotos-Paises/t500/2009/4/13/5874_1239593183.jpg',
     mapImg: '',
     graphImg: ''
+  });
+}
+
+if (Meteor.users.find({}).count() === 0 ) {
+  Accounts.createUser({
+      username: 'test1',
+      password: 'testing'
+  });
+}
+
+if(Reviews.find().count() == 0){
+  var case1 = Hoods.find({hoodCase:'caso1'}, {limit: 1}).fetch()[0];
+  var case2 = Hoods.find({hoodCase:'caso2'}, {limit: 1}).fetch()[0];
+  var case3 = Hoods.find({hoodCase:'caso3'}, {limit: 1}).fetch()[0];
+  var case4 = Hoods.find({hoodCase:'caso4'}, {limit: 1}).fetch()[0];
+
+  var theUser = Meteor.users.findOne({username: 'test1'});
+  Reviews.insert({
+    userId: theUser._id,
+    hoodId: case1._id,
+    text: 'Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...',
+    author: theUser.username,
+    submitted: new Date(),
+    safety: 1,
+    price: 3
+  });
+
+  Reviews.insert({
+    userId: theUser._id,
+    hoodId: case2._id,
+    text: 'Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...',
+    author: theUser.username,
+    submitted: new Date(),
+    safety: 3,
+    price: 3
+  });
+
+  Reviews.insert({
+    userId: theUser._id,
+    hoodId: case3._id,
+    text: 'Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...',
+    author: theUser.username,
+    submitted: new Date(),
+    safety: 3,
+    price: 2
+  });
+
+  Reviews.insert({
+    userId: theUser._id,
+    hoodId: case4._id,
+    text: 'Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...',
+    author: theUser.username,
+    submitted: new Date(),
+    safety: 2,
+    price: 1
   });
 }
