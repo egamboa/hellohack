@@ -4,6 +4,8 @@ Template.hoodPage.rendered = function(){
 }
 Template.hoodPage.helpers({
 	reviews: function(){
-		return Reviews.find({hoodId: this.params._id});
+		var path = Router.current().route.path(this);
+		var trimPath = path.slice(6,path.length);
+		return Reviews.find({hoodId: trimPath});
 	}
 });

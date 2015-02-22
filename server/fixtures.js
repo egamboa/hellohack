@@ -152,8 +152,8 @@ if(Reviews.find().count() == 0){
     text: 'Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...',
     author: theUser.username,
     submitted: new Date(),
-    safety: 4,
-    price: 4
+    safety: 1,
+    price: 3
   });
 
   Reviews.insert({
@@ -162,8 +162,8 @@ if(Reviews.find().count() == 0){
     text: 'Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...',
     author: theUser.username,
     submitted: new Date(),
-    safety: 4,
-    price: 4
+    safety: 3,
+    price: 3
   });
 
   Reviews.insert({
@@ -172,8 +172,8 @@ if(Reviews.find().count() == 0){
     text: 'Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...',
     author: theUser.username,
     submitted: new Date(),
-    safety: 4,
-    price: 4
+    safety: 3,
+    price: 2
   });
 
   Reviews.insert({
@@ -182,7 +182,7 @@ if(Reviews.find().count() == 0){
     text: 'Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...',
     author: theUser.username,
     submitted: new Date(),
-    safety: 4,
-    price: 4
+    safety: 2,
+    price: 1
   });
 }
