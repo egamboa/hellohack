@@ -1,10 +1,19 @@
-
-
+.hood{
+  overflow: hidden;
+  img{
+    width: 100%;
+    height: auto;
+  }
+}
 
 @media screen and (max-width: 640px){
-
+  img.mapLarge{
+    display: none;
+  }
 }
 
 @media screen and (min-width: 641px){
-
+  img.mapSmall{
+    display: none;
+  }
 }
