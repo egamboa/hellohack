@@ -28,10 +28,12 @@ if (Hoods.find().count() === 0) {
     description: 'Parque para Perros, U Fidélitas, U Latina, EPA, Plaza del sol, Colegio Internacional SEK, Mc Donald\'s, Plaza Cristal, Plaza Freses, Puro MTB',
     provice: 'San José',
     canton: 'Curridabat',
-    reviewCount: 0,
+    reviewCount: 71,
     hoodCase: 'caso1',
     img: 'http://www.fotopaises.com/Fotos-Paises/t500/2007/2/18/3310_1171876869.jpg',
-    mapImg: '',
+    mapLargeImg: '/img/maps/mapLargeAlerts.jpg',
+    mapSmallImg: '/img/maps/mapSmallAlerts.jpg',
+    smile: '/img/icons/neutral.jpg',
     graphImg: ''
   });
 
@@ -40,10 +42,12 @@ if (Hoods.find().count() === 0) {
     description: 'Distrito Cuatro (Starbucks, Maradentro, Matsuri, El Argentino, Auto Mercado, Práctico) Pescatore, La Fabbrica, Crossfit Escazú, Crossfit 506',
     provice: 'San José',
     canton: 'Escazú',
-    reviewCount: 0,
+    reviewCount: 69,
     hoodCase: 'caso2',
     img: 'http://agenteencostarica.com/wp-content/uploads/2014/09/IMG_7305.jpg',
-    mapImg: '',
+    mapLargeImg: '/img/maps/mapLargeAlerts.jpg',
+    mapSmallImg: '/img/maps/mapSmallAlerts.jpg',
+    smile: '/img/icons/neutral.jpg',
     graphImg: ''
   });
 
@@ -52,10 +56,12 @@ if (Hoods.find().count() === 0) {
     description: 'Terramall, PriceSmart, Saint Gregory, Más por Menos, Parque de Tres Ríos, Farmacia Tres Ríos, Banco Nacional, Vetnet Veterinaria',
     provice: 'Cartago',
     canton: 'Tres Ríos',
-    reviewCount: 0,
+    reviewCount: 13,
     hoodCase: 'caso3',
     img: 'http://static.panoramio.com/photos/large/38314980.jpg',
-    mapImg: '',
+    mapLargeImg: '/img/maps/mapLargeAlerts.jpg',
+    mapSmallImg: '/img/maps/mapSmallAlerts.jpg',
+    smile: '/img/icons/neutral.jpg',
     graphImg: ''
   });
 
@@ -64,10 +70,12 @@ if (Hoods.find().count() === 0) {
     description: 'Outlet Mall, UCR, paradas de bus, Mall San Pedro, Librería Lehmann, Burger King, Auto Mercado, Más por Menos',
     provice: 'San José',
     canton: 'Montes de Oca',
-    reviewCount: 0,
+    reviewCount: 28,
     hoodCase: 'caso4',
     img: 'http://upload.wikimedia.org/wikipedia/commons/c/cf/Parque_JFK.jpg',
-    mapImg: '',
+    mapLargeImg: '/img/maps/mapLargeAlerts.jpg',
+    mapSmallImg: '/img/maps/mapSmallAlerts.jpg',
+    smile: '/img/icons/neutral.jpg',
     graphImg: ''
   });
 
@@ -76,10 +84,12 @@ if (Hoods.find().count() === 0) {
     description: 'Outlet Mall, UCR, paradas de bus, Mall San Pedro, Librería Lehmann, Burger King, Auto Mercado, Más por Menos',
     provice: 'San José',
     canton: 'Goicoechea',
-    reviewCount: 0,
+    reviewCount: 51,
     hoodCase: 'none',
     img: 'http://images.quebarato.co.cr/T440x/casa+calle+blancos+1+tibas+san+jose+costa+rica__7209CA_1.jpg',
-    mapImg: '',
+    mapLargeImg: '/img/maps/mapLargeAlerts.jpg',
+    mapSmallImg: '/img/maps/mapSmallAlerts.jpg',
+    smile: '/img/icons/neutral.jpg',
     graphImg: ''
   });
 
@@ -88,10 +98,12 @@ if (Hoods.find().count() === 0) {
     description: 'Outlet Mall, UCR, paradas de bus, Mall San Pedro, Librería Lehmann, Burger King, Auto Mercado, Más por Menos',
     provice: 'San José',
     canton: 'Desamparados',
-    reviewCount: 0,
+    reviewCount: 10,
     hoodCase: 'none',
     img: 'http://static.panoramio.com/photos/large/18800024.jpg',
-    mapImg: '',
+    mapLargeImg: '/img/maps/mapLargeAlerts.jpg',
+    mapSmallImg: '/img/maps/mapSmallAlerts.jpg',
+    smile: '/img/icons/neutral.jpg',
     graphImg: ''
   });
 
@@ -100,10 +112,12 @@ if (Hoods.find().count() === 0) {
     description: 'Outlet Mall, UCR, paradas de bus, Mall San Pedro, Librería Lehmann, Burger King, Auto Mercado, Más por Menos',
     provice: 'San José',
     canton: 'Sabanilla',
-    reviewCount: 0,
+    reviewCount: 15,
     hoodCase: 'none',
     img: 'http://upload.wikimedia.org/wikipedia/commons/c/cf/Parque_JFK.jpg',
-    mapImg: '',
+    mapLargeImg: '/img/maps/mapLargeAlerts.jpg',
+    mapSmallImg: '/img/maps/mapSmallAlerts.jpg',
+    smile: '/img/icons/neutral.jpg',
     graphImg: ''
   });
 
@@ -112,10 +126,12 @@ if (Hoods.find().count() === 0) {
     description: 'Outlet Mall, UCR, paradas de bus, Mall San Pedro, Librería Lehmann, Burger King, Auto Mercado, Más por Menos',
     provice: 'San José',
     canton: 'San José',
-    reviewCount: 0,
+    reviewCount: 28,
     hoodCase: 'none',
     img: 'http://upload.wikimedia.org/wikipedia/commons/c/cf/Parque_JFK.jpg',
-    mapImg: '',
+    mapLargeImg: '/img/maps/mapLargeAlerts.jpg',
+    mapSmallImg: '/img/maps/mapSmallAlerts.jpg',
+    smile: '/img/icons/neutral.jpg',
     graphImg: ''
   });
 
@@ -124,10 +140,12 @@ if (Hoods.find().count() === 0) {
     description: 'Outlet Mall, UCR, paradas de bus, Mall San Pedro, Librería Lehmann, Burger King, Auto Mercado, Más por Menos',
     provice: 'San José',
     canton: 'Guadalupe',
-    reviewCount: 0,
+    reviewCount: 30,
     hoodCase: 'none',
     img: 'http://www.fotopaises.com/Fotos-Paises/t500/2009/4/13/5874_1239593183.jpg',
-    mapImg: '',
+    mapLargeImg: '/img/maps/mapLargeAlerts.jpg',
+    mapSmallImg: '/img/maps/mapSmallAlerts.jpg',
+    smile: '/img/icons/neutral.jpg',
     graphImg: ''
   });
 }
