@@ -111,14 +111,51 @@
         border: none;
       }
     }
-    .recommended{
+  }
+}
+
+#stats{
+  padding: 1.5rem;
+  background: #fff;
+  float: left;
+  width: 100%;
+  h3{
+    float: left;
+    width: 100%;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    font-family: 'gothambold', sans-serif;
+  }
+  div{
+    float: left;
+    width: 100%;
+  }
+  .number{
+    font-size: 5rem;
+line-height: 50px;
+text-align: center;
+font-family: 'proximanovasbold', sans-serif;
+border-bottom: 1px solid #eee;
+margin-bottom: 1rem;
+  }
+  .ratingCaption{
+    display: block;
+font-size: 1.6rem;
+font-family: 'proximanovasbold';
+/* text-transform: uppercase; */
+text-align: center;
+  }
+  .recommended{
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid #eee;
       ul{
         padding: 0;
         list-style: none;
         margin: 0;
+        width: 100%;
       }
     }
-  }
 }
 .image-holder{
   position: relative;
