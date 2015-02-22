@@ -67,20 +67,57 @@
 }
 
 #hood-tabs{
-  ul{
+  & > ul{
     list-style: none;
     padding-left: 0;
+    margin: 0;
     li{
       width: 50%;
       float: left;
+      border-bottom: 1px solid #d8d8d8;
+      background: #eee;
       &.ui-state-active{
         background: #fff;
         border-bottom: none;
+      }
+      &:first-child{
+        border-right: 1px solid #d8d8d8;
+      }
+      a{
+        line-height: 6rem;
+        display: block;
+        font-family: 'ProximaNovaSbold', sans-serif;
+        font-size: 1.3rem;
+        text-align: center;
+        color: #464646;
+        text-transform: uppercase;
+        i{
+          margin-right: 1rem;
+        }
       }
     }
   }
   h3{
     margin-top: 0;
+  }
+  div{
+    background: #fff;
+    ul.reviews{
+      background: #fff;
+      width: 100%;
+      li{
+        background: #fff;
+        width: 100%;
+        border: none;
+      }
+    }
+    .recommended{
+      ul{
+        padding: 0;
+        list-style: none;
+        margin: 0;
+      }
+    }
   }
 }
 
