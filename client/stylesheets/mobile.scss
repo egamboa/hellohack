@@ -1,17 +1,10 @@
-@media screen and (max-device-width: 640px){
+@media screen and (max-width: 640px){
 	body{
 		background: #eee;
+    overflow-x: hidden;
 		&.background-home{
 			background: url(/img/mobilebg.jpg) no-repeat center center;
-		background-size: cover;
-		}
-		.container{
-			padding: 0;
-			.navbar{
-				.navbar-brand{
-					padding: 1rem 0 0 1rem;
-				}
-			}
+			background-size: cover;
 			#main{
 				padding: 0 2.5rem;
 				#search{
@@ -24,6 +17,17 @@
 							font-size: 1.5rem;
 						}
 					}
+				}
+			}
+		}
+		& > .container{
+			padding: 0;
+		}
+		.container{
+			padding: 0;
+			.navbar{
+				.navbar-brand{
+					padding: 1rem 0 0 1rem;
 				}
 			}
 		}
