@@ -1,0 +1,24 @@
+<template name="reviewSubmit">
+  <form name="review" class="review-form form">
+    <div class="form-group {{errorClass 'body'}}">
+        <div class="controls">
+            <div class="smiles">
+                :D
+                1<input type="radio" name="smile" value="1"/>
+                2<input type="radio" name="smile" value="2"/>
+                3<input type="radio" name="smile" value="3"/>
+            </div>
+            <div class="dollars">
+                $
+                1<input type="radio" name="dollar" value="1"/>
+                2<input type="radio" name="dollar" value="2"/>
+                3<input type="radio" name="dollar" value="3"/>
+            </div>
+            <label for="body">Review this neighborhood</label>
+            <textarea name="body" id="body" class="form-control" rows="3"></textarea>
+            <span class="help-block">{{errorMessage 'body'}}</span>
+        </div>
+    </div>
+    <button type="submit" class="btn btn-primary">Add Review</button>
+  </form>
+</template>

@@ -1,0 +1,40 @@
+<template name="hoodPage">
+  {{> hoodItem}}
+  <div id="hood-tabs">
+    <ul>
+      <li><a href="#comments"><i class="fa fa-comment"></i>Comments</a></li>
+      <li><a href="#stats"><i class="fa fa-pie-chart"></i>stats</a></li>
+    </ul>
+    <div id="comments">
+      {{#if currentUser}}
+        {{> reviewSubmit}}
+      {{else}}
+        <p>Please log in or create an account to leave a review.</p>
+      {{/if}}
+      <ul class="reviews list-unstyled">
+        {{#each reviews}}
+          {{> reviewItem}}
+        {{/each}}
+      </ul>
+    </div>
+    <div id="stats">
+      <div class="rating">
+        <h3>Final rating</h3>
+        <div class="number">
+          <img src="/img/icons/happy.png" /> 95%
+          <span class="ratingCaption">Very safe to live</span>
+        </div>
+        <h3>Neighborhood Stats</h3>
+        <img src="/img/piechart.png" alt="" class="chart" />
+      </div>
+      <div class="recommended">
+        <h3>Recommended for</h3>
+        <ul>
+          <li>Single people</li>
+          <li>Families with children</li>
+          <li>People with pets</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</template>

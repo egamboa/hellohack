@@ -1,0 +1,31 @@
+.navbar-default{
+  margin-bottom: 0;
+  .navbar-header{
+  	@media screen and (max-width: 640px){
+  		.navbar-toggle{
+  			border: none;
+  			.icon-bar{
+  				background-color: $orange;
+          height: 3px;
+  			}
+  		}
+  	}
+      .navbar-brand{
+    		text-transform: uppercase;
+    		color: #000;
+      	// font-weight: bold;
+      	line-height: 3.5rem;
+      	height: auto;
+      	font-family: 'gothambold', sans-serif;
+      .app-logo{
+      	display: block;
+      	background-color: $orange;
+      	height: 3rem;
+      	width: 3rem;
+      	border-radius: 50px;
+      	float: left;
+      	margin-right: 8px;
+      }
+    }
+  }
+}

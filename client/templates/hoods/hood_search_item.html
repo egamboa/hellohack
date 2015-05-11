@@ -1,0 +1,17 @@
+<template name="hoodSearchItem">
+  <div class="hood">
+    <div class="hood-content">
+      <div class="image-wrapper">
+        <img src="{{img}}">
+        <h3 class="truncate"><a href="/hood/{{_id}}">{{title}}</a></h3>
+      </div>
+      <div class="hood-bottom">
+        <img class="pull-right" src="{{smile}}">
+        <ul class="list-unstyled">
+          <li class="truncate"><i class="fa fa-map-marker"></i> {{canton}}, {{provice}}</li>
+          <li class="truncate">{{reviewCount}} Reviews</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</template>

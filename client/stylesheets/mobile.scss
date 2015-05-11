@@ -1,0 +1,35 @@
+@media screen and (max-width: 640px){
+	body{
+		background: #eee;
+    overflow-x: hidden;
+		&.background-home{
+			background: url(/img/mobilebg.jpg) no-repeat center center;
+			background-size: cover;
+			#main{
+				padding: 0 2.5rem;
+				#search{
+					.container{
+						h1{
+							font-size: 4rem;
+							margin-top: 8rem;
+						}
+						p{
+							font-size: 1.5rem;
+						}
+					}
+				}
+			}
+		}
+		& > .container{
+			padding: 0;
+		}
+		.container{
+			padding: 0;
+			.navbar{
+				.navbar-brand{
+					padding: 1rem 0 0 1rem;
+				}
+			}
+		}
+	}
+}

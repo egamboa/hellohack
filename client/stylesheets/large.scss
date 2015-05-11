@@ -1,0 +1,36 @@
+@media screen and (min-device-width: 641px){
+	body{
+		background: #eee;
+		&.background-home{
+			background: url(/img/largebg.jpg) no-repeat center center;
+		}
+	}
+	.navbar{
+		border-radius: 0;
+	}
+	.navbar-brand{
+		padding: 0.8rem 1.5rem;
+	}
+	#search{
+		margin-top: 7rem;
+		.container .row form{
+      input[type="text"]{
+        height: 5.5rem;
+        line-height: 6rem;
+        font-size: 1.8rem;
+        padding-left: 5rem;
+      }
+      span.searchByGPS i{
+        font-size: 2.5rem;
+      }
+			ul.autocomplete{
+				li{
+					a{
+						font-size: 1.8rem;
+            line-height: 3.5rem;
+					}
+				}
+			}
+		}
+	}
+}
